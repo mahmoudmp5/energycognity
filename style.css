@@ -1,13 +1,23 @@
-/* General */
-/* Website Background */
 body {
-  background-image: src='background.jpg';
-  background-size: cover;       /* Makes the image cover the entire screen */
-  background-repeat: no-repeat; /* Prevents tiling */
-  background-attachment: fixed; /* Stays fixed when scrolling */
-  background-position: center;  /* Centers the image */
+  background-image: url('background.jpg'); /* Updated to your uploaded file */
+  background-size: cover;       /* Cover the entire screen */
+  background-repeat: no-repeat; /* No tiling */
+  background-attachment: fixed; /* Stays fixed while scrolling */
+  background-position: center;  /* Center the image */
   font-family: Arial, sans-serif;
   color: #333;                  /* Default text color */
+}
+
+/* Optional: Semi-transparent overlay for readability */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7); /* White overlay with 70% opacity */
+  z-index: -1; /* Behind all content */
 }
 
 
