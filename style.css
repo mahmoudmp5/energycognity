@@ -1,10 +1,15 @@
 /* General */
+/* Website Background */
 body {
-  margin: 0;
+  background-image: url('background.png');
+  background-size: cover;       /* Makes the image cover the entire screen */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Stays fixed when scrolling */
+  background-position: center;  /* Centers the image */
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  color: #333;                  /* Default text color */
 }
+
 
 /* Navbar */
 nav {
