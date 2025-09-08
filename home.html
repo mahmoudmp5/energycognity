@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enercognity - AI-Powered Energy Optimization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f3f4f6; /* light grey */
+      color: #2d3748; /* dark grey */
+    }
+    .hero {
+      background: linear-gradient(120deg, #2563eb 0%, #64748b 100%);
+      text-align: center;
+      padding: 60px 20px 40px 20px;
+      color: #fff;
+      position: relative;
+    }
+    .logo-container {
+      width: 120px;
+      margin: 0 auto 25px auto;
+    }
+    .logo-container img {
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      filter: drop-shadow(0 2px 8px rgba(59,130,246,0.10));
+      background: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      box-sizing: border-box;
+      animation: logoBounce 1.2s cubic-bezier(.36,.07,.19,.97) both;
+    }
+    @keyframes logoBounce {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.15);
+        opacity: 1;
+      }
+      70% {
+        transform: scale(0.95);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    .headline {
+      font-size: 2.8em;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    .tagline {
+      font-size: 1.35em;
+      font-weight: 400;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #e0e7ef;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      padding: 16px 34px;
+      font-size: 1.1em;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 32px;
+      transition: background 0.2s, color 0.2s;
+      background: #fff;
+      color: #2563eb;
+      border: 2px solid #2563eb;
+      box-shadow: 0 2px 12px rgba(59, 130, 246, 0.10);
+    }
+    .cta-buttons a:hover {
+      background: #2563eb;
+      color: #fff;
+      border-color: #2563eb;
+    }
+    .contact-section {
+      max-width: 480px;
+      margin: 60px auto 40px auto;
+      background: #f9fafb; /* lighter grey */
+      padding: 32px 28px;
+      border-radius: 16px;
+      box-shadow: 0 6px 32px rgba(59,130,246,0.10);
+      border: 1px solid #e5e7eb;
+    }
+    .contact-section h2 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #2563eb;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 500;
+      color: #334155;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 9px;
+      margin-bottom: 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 1em;
+      font-family: inherit;
+      background: #f3f4f6;
+      color: #2d3748;
+    }
+    .contact-form textarea {
+      min-height: 70px;
+      resize: vertical;
+    }
+    .contact-form button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1em;
+      border-radius: 24px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+      margin-top: 10px;
+    }
+    .contact-form button:hover {
+      background: #1e40af;
+    }
+    @media (max-width: 600px) {
+      .headline {
+        font-size: 2em;
+      }
+      .contact-section {
+        padding: 20px 10px;
+      }
+      .cta-buttons a {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+      .logo-container {
+        width: 90px;
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="logo-container">
+      <img src="logo.png" alt="Enercognity Logo">
+    </div>
+    <div class="headline">
+      AI-Powered Energy Optimization for Smarter Living
+    </div>
+    <div class="tagline">
+      Enercognity bridges Prosumers and Utilities,<br>
+      helping you save energy, money, and the planet.
+    </div>
+    <div class="cta-buttons">
+      <a href="#about">Learn More</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </section>
 
+  <!-- Example About/Tech anchor section -->
+  <section id="about" style="max-width:700px;margin:40px auto 40px auto;padding:0 20px;">
+    <h2 style="color:#2563eb;">About Enercognity</h2>
+    <p style="color:#334155;">
+      Enercognity leverages artificial intelligence to connect energy producers and consumers (prosumers) with utilities, creating a smart, sustainable energy ecosystem. Learn how our platform uses real-time data and predictive analytics to optimize energy usage, reduce costs, and enable a greener future.
+    </p>
+    <!-- Add more about/tech details here as needed -->
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" method="POST" action="mailto:info@energycognity.com" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
