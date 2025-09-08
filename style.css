@@ -237,3 +237,79 @@ nav ul li a.active {
 .team-member a:hover {
   background-color: #005582;
 }
+/* Navbar for Mobile */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+.nav-links a.active {
+  font-weight: bold;
+}
+
+/* Team Section Responsive */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* About and Content Sections */
+.about, .content {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Text resizing for smaller screens */
+.about h1, .content h2 {
+  font-size: 2em;
+}
+.about p, .content p {
+  font-size: 1em;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .team-member {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .team-member img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about h1 {
+    font-size: 1.8em;
+  }
+  .content h2 {
+    font-size: 1.5em;
+  }
+  .about p, .content p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+}
