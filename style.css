@@ -1,9 +1,12 @@
+/* General */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   color: #333;
 }
+
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -11,24 +14,48 @@ nav {
   background: #006400;
   padding: 10px 20px;
 }
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;   /* Adjust size */
+  width: auto;
+}
+
 nav h1 {
   color: white;
+  font-size: 20px;
+  margin: 0;
 }
+
+/* Menu */
 nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
+
+/* Hero section */
 .hero {
   text-align: center;
   padding: 100px 20px;
   background: linear-gradient(to right, #006400, #00a86b);
   color: white;
 }
+
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -38,6 +65,8 @@ nav ul li a {
   border-radius: 5px;
   text-decoration: none;
 }
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
